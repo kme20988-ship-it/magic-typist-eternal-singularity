@@ -1,0 +1,15 @@
+{
+  "name": "magic-engine",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "magic_engine_bg.wasm",
+    "magic_engine.js",
+    "magic_engine.d.ts"
+  ],
+  "main": "magic_engine.js",
+  "types": "magic_engine.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

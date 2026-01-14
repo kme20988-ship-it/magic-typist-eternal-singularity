@@ -122,9 +122,10 @@ function App() {
 
   useEffect(() => {
     if (dragonLevel > prevDragonLevel.current) {
-      setShowLevelUpEffect(true);
+      // Use setTimeout to avoid synchronous setState warning
+      setTimeout(() => setShowLevelUpEffect(true), 0);
       audioManager.playSFX('levelup');
-      triggerDialogue("力が...進化したぞ！");
+      setTimeout(() => triggerDialogue("力が...進化したぞ！"), 0);
       setTimeout(() => setShowLevelUpEffect(false), 2000);
       prevDragonLevel.current = dragonLevel;
     }
@@ -538,7 +539,7 @@ function App() {
         setCurrentProgress(0);
       }
     }
-  }, [currentSpell, currentProgress, combo, maxCombo, isManualBurst, deckStats, artifactStats, monsterElement, settings.haptic, unlockedSkills, triggerDialogue, stageIndex, equippedElements, magicStats, currentWorldId, isVictorious]);
+  }, [currentSpell, currentProgress, combo, maxCombo, isManualBurst, deckStats, artifactStats, monsterElement, settings.haptic, unlockedSkills, triggerDialogue, stageIndex, equippedElements, magicStats, currentWorldId, isVictorious, showCriticalOverlay]);
 
   // Keyboard Mapping
   const KEY_MAPPING = useMemo(() => ['q', 'w', 'e', 'r', 't', 'y'], []);

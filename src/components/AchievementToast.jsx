@@ -5,7 +5,7 @@ const AchievementToast = ({ achievement, onComplete }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        setIsVisible(true);
+        setTimeout(() => setIsVisible(true), 0);
         const timer = setTimeout(() => {
             setIsVisible(false);
             setTimeout(onComplete, 600);

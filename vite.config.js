@@ -4,7 +4,8 @@ import wasm from "vite-plugin-wasm";
 import topLevelAwait from "vite-plugin-top-level-await";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(() => {
+  // eslint-disable-next-line no-undef
   const isGitHubPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
   return {

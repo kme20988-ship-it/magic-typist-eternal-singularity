@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sword, Zap, Target, Sparkles } from 'lucide-react';
 
-const PassiveStatusCard = ({ deckStats, artifactStats, combo, magicStats }) => {
+const PassiveStatusCard = ({ deckStats, artifactStats, magicStats }) => {
     return (
         <div className="w-full max-w-md bg-black/40 backdrop-blur-md rounded-[2.5rem] border border-white/10 p-6 space-y-4">
             <div className="flex items-center justify-between mb-2 px-2">

@@ -39,7 +39,7 @@ class AudioManager {
         if (!enabled && this.bgm) {
             this.bgm.pause();
         } else if (enabled && this.bgm) {
-            this.bgm.play().catch(e => console.log("BGM play interrupted"));
+            this.bgm.play().catch(() => console.log("BGM play interrupted"));
         }
     }
 
@@ -54,7 +54,7 @@ class AudioManager {
         // Clone for overlapping sounds
         const sound = this.sounds[key].cloneNode();
         sound.volume = this.volume * volumeMult;
-        sound.play().catch(e => { });
+        sound.play().catch(() => { });
     }
 
     playBGM(key) {
@@ -71,7 +71,7 @@ class AudioManager {
             this.bgm.loop = true;
             this.bgm.volume = this.volume;
             if (this.enabled) {
-                this.bgm.play().catch(e => {
+                this.bgm.play().catch(() => {
                     console.log("BGM autoplay prevented, will play on next interaction");
                 });
             }

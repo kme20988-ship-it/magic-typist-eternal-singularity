@@ -1,0 +1,1 @@
+/Users/iwatakoumei/.gemini/antigravity/scratch/typing-idle-game/wasm/target/wasm32-unknown-unknown/release/magic_engine.wasm: /Users/iwatakoumei/.gemini/antigravity/scratch/typing-idle-game/wasm/src/lib.rs

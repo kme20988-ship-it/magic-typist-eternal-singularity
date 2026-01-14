@@ -1,0 +1,34 @@
+
+> typing-idle-game@0.0.0 build
+> npm run build:wasm && vite build
+
+
+> typing-idle-game@0.0.0 build:wasm
+> PATH="$HOME/.cargo/bin:$PATH" wasm-pack build wasm --target web --out-dir ../src/wasm_pkg
+
+[INFO]: 🎯  Checking for the Wasm target...
+[INFO]: 🌀  Compiling to Wasm...
+warning: unused imports: `Deserialize` and `Serialize`
+ --> src/lib.rs:2:13
+  |
+2 | ...::{Serialize, Deserialize};
+  |       ^^^^^^^^^  ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `magic-engine` (lib) generated 1 warning (run `cargo fix --lib -p magic-engine` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 0.01s
+[INFO]: ⬇️  Installing wasm-bindgen...
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: Optional fields missing from Cargo.toml: 'description', 'repository', and 'license'. These are not necessary, but recommended
+[INFO]: ✨   Done in 0.23s
+[INFO]: 📦   Your wasm pkg is ready to publish at src/wasm_pkg.
+vite v7.3.0 building client environment for production...
+transforming...
+✓ 1730 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.26 kB │ gzip:   0.70 kB
+dist/assets/index-BzMrUQ9h.css   78.93 kB │ gzip:  12.60 kB
+dist/assets/index-B9mXftHa.js   475.81 kB │ gzip: 119.02 kB
+✓ built in 1.14s

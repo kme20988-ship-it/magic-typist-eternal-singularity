@@ -1,0 +1,139 @@
+{
+    "raidBosses": [
+        {
+            "id": "boss_001",
+            "name": "終末のプロトコル",
+            "nameEn": "Doomsday Protocol",
+            "tier": 1,
+            "health": 5000,
+            "rewards": {
+                "mp": 1000
+            },
+            "image": "/assets/bosses/boss_001.png"
+        },
+        {
+            "id": "boss_002",
+            "name": "虚無のルート権限",
+            "nameEn": "Void Root Access",
+            "tier": 1,
+            "health": 7500,
+            "rewards": {
+                "mp": 1500
+            },
+            "image": "/assets/bosses/boss_002.png"
+        },
+        {
+            "id": "boss_003",
+            "name": "暗黒のファイアウォール",
+            "nameEn": "Dark Firewall",
+            "tier": 2,
+            "health": 12000,
+            "rewards": {
+                "mp": 2500
+            },
+            "image": "/assets/bosses/boss_003.png"
+        },
+        {
+            "id": "boss_004",
+            "name": "混沌のデータストリーム",
+            "nameEn": "Chaos Data Stream",
+            "tier": 2,
+            "health": 18000,
+            "rewards": {
+                "mp": 4000
+            },
+            "image": "/assets/bosses/boss_004.png"
+        },
+        {
+            "id": "boss_005",
+            "name": "破滅のシステムコア",
+            "nameEn": "Destruction System Core",
+            "tier": 3,
+            "health": 30000,
+            "rewards": {
+                "mp": 7500
+            },
+            "image": "/assets/bosses/boss_005.png"
+        },
+        {
+            "id": "boss_006",
+            "name": "絶望のマスターサーバー",
+            "nameEn": "Despair Master Server",
+            "tier": 3,
+            "health": 50000,
+            "rewards": {
+                "mp": 12000
+            },
+            "image": "/assets/bosses/boss_006.png"
+        },
+        {
+            "id": "boss_007",
+            "name": "永劫のクォンタムAI",
+            "nameEn": "Eternal Quantum AI",
+            "tier": 4,
+            "health": 100000,
+            "rewards": {
+                "mp": 25000
+            },
+            "image": "/assets/bosses/boss_007.png"
+        }
+    ],
+    "familiarEvolutions": [
+        {
+            "stage": 1,
+            "name": "見習いドラゴン",
+            "nameEn": "Apprentice Dragon",
+            "requirement": {
+                "level": 1
+            }
+        },
+        {
+            "stage": 2,
+            "name": "若きドラゴン",
+            "nameEn": "Young Dragon",
+            "requirement": {
+                "level": 5
+            }
+        },
+        {
+            "stage": 3,
+            "name": "成熟したドラゴン",
+            "nameEn": "Mature Dragon",
+            "requirement": {
+                "level": 10
+            }
+        },
+        {
+            "stage": 4,
+            "name": "古代のドラゴン",
+            "nameEn": "Ancient Dragon",
+            "requirement": {
+                "level": 20
+            }
+        },
+        {
+            "stage": 5,
+            "name": "伝説のドラゴン",
+            "nameEn": "Legendary Dragon",
+            "requirement": {
+                "level": 50
+            }
+        },
+        {
+            "stage": 6,
+            "name": "神話のドラゴン",
+            "nameEn": "Mythical Dragon",
+            "requirement": {
+                "level": 100
+            }
+        },
+        {
+            "stage": 7,
+            "name": "超越のドラゴン",
+            "nameEn": "Transcendent Dragon",
+            "requirement": {
+                "level": 200
+            }
+        }
+    ]
+}

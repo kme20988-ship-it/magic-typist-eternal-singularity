@@ -1,0 +1,270 @@
+{
+    "skills": [
+        {
+            "id": "skill_001",
+            "name": "魔力増幅",
+            "description": "詠唱成功時の獲得MPが10%増加する",
+            "tier": 1,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "cost": 200,
+            "prerequisites": [],
+            "effects": {
+                "mp_multiplier": 1.1
+            }
+        },
+        {
+            "id": "skill_002",
+            "name": "高速詠唱",
+            "description": "詠唱速度が上がり、コンボが切れにくくなる（+1秒）",
+            "tier": 1,
+            "position": {
+                "x": 1,
+                "y": 0
+            },
+            "cost": 250,
+            "prerequisites": [],
+            "effects": {
+                "combo_time_bonus": 1
+            }
+        },
+        {
+            "id": "skill_003",
+            "name": "属性親和：火",
+            "description": "火属性の魔法使用時、獲得MPが20%増加",
+            "tier": 1,
+            "position": {
+                "x": 2,
+                "y": 0
+            },
+            "cost": 300,
+            "prerequisites": [],
+            "effects": {
+                "fire_bonus": 1.2
+            }
+        },
+        {
+            "id": "skill_004",
+            "name": "コンボマスター",
+            "description": "コンボボーナスが15%増加する",
+            "tier": 2,
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "cost": 400,
+            "prerequisites": [
+                "skill_001"
+            ],
+            "effects": {
+                "combo_multiplier": 1.15
+            }
+        },
+        {
+            "id": "skill_005",
+            "name": "クリティカル強化",
+            "description": "クリティカル発生時の倍率が3倍→4倍になる",
+            "tier": 2,
+            "position": {
+                "x": 1,
+                "y": 1
+            },
+            "cost": 500,
+            "prerequisites": [
+                "skill_002"
+            ],
+            "effects": {
+                "critical_multiplier": 4
+            }
+        },
+        {
+            "id": "skill_006",
+            "name": "属性親和：水",
+            "description": "水属性の魔法使用時、獲得MPが20%増加",
+            "tier": 2,
+            "position": {
+                "x": 2,
+                "y": 1
+            },
+            "cost": 300,
+            "prerequisites": [
+                "skill_003"
+            ],
+            "effects": {
+                "water_bonus": 1.2
+            }
+        },
+        {
+            "id": "skill_007",
+            "name": "フィーバー延長",
+            "description": "フィーバーモード中、コンボが切れるまでの時間が2秒延長",
+            "tier": 3,
+            "position": {
+                "x": 0,
+                "y": 2
+            },
+            "cost": 600,
+            "prerequisites": [
+                "skill_004"
+            ],
+            "effects": {
+                "fever_time_bonus": 2
+            }
+        },
+        {
+            "id": "skill_008",
+            "name": "魔力の奔流",
+            "description": "全ての獲得MPが25%増加する",
+            "tier": 3,
+            "position": {
+                "x": 1,
+                "y": 2
+            },
+            "cost": 800,
+            "prerequisites": [
+                "skill_004",
+                "skill_005"
+            ],
+            "effects": {
+                "mp_multiplier": 1.25
+            }
+        },
+        {
+            "id": "skill_009",
+            "name": "属性親和：雷",
+            "description": "雷属性の魔法使用時、獲得MPが20%増加",
+            "tier": 3,
+            "position": {
+                "x": 2,
+                "y": 2
+            },
+            "cost": 300,
+            "prerequisites": [
+                "skill_006"
+            ],
+            "effects": {
+                "thunder_bonus": 1.2
+            }
+        },
+        {
+            "id": "skill_010",
+            "name": "究極の魔力",
+            "description": "全ての獲得MPが50%増加する（最終強化）",
+            "tier": 4,
+            "position": {
+                "x": 0,
+                "y": 3
+            },
+            "cost": 1500,
+            "prerequisites": [
+                "skill_007",
+                "skill_008"
+            ],
+            "effects": {
+                "mp_multiplier": 1.5
+            }
+        },
+        {
+            "id": "skill_011",
+            "name": "属性親和：風",
+            "description": "風属性の魔法使用時、獲得MPが20%増加",
+            "tier": 2,
+            "position": {
+                "x": 3,
+                "y": 1
+            },
+            "cost": 300,
+            "prerequisites": [],
+            "effects": {
+                "wind_bonus": 1.2
+            }
+        },
+        {
+            "id": "skill_012",
+            "name": "属性親和：光",
+            "description": "光属性の魔法使用時、獲得MPが25%増加",
+            "tier": 3,
+            "position": {
+                "x": 3,
+                "y": 2
+            },
+            "cost": 400,
+            "prerequisites": [
+                "skill_011"
+            ],
+            "effects": {
+                "light_bonus": 1.25
+            }
+        },
+        {
+            "id": "skill_013",
+            "name": "属性親和：闇",
+            "description": "闇属性の魔法使用時、獲得MPが25%増加",
+            "tier": 3,
+            "position": {
+                "x": 4,
+                "y": 2
+            },
+            "cost": 400,
+            "prerequisites": [
+                "skill_011"
+            ],
+            "effects": {
+                "dark_bonus": 1.25
+            }
+        },
+        {
+            "id": "skill_014",
+            "name": "全属性マスタリー",
+            "description": "全属性の魔法使用時、獲得MPが30%増加",
+            "tier": 4,
+            "position": {
+                "x": 3,
+                "y": 3
+            },
+            "cost": 2000,
+            "prerequisites": [
+                "skill_009",
+                "skill_012",
+                "skill_013"
+            ],
+            "effects": {
+                "all_attributes_bonus": 1.3
+            }
+        },
+        {
+            "id": "skill_015",
+            "name": "放置収益強化",
+            "description": "使い魔からの自動収益が20%増加",
+            "tier": 2,
+            "position": {
+                "x": 4,
+                "y": 1
+            },
+            "cost": 450,
+            "prerequisites": [],
+            "effects": {
+                "idle_income_multiplier": 1.2
+            }
+        },
+        {
+            "id": "skill_016",
+            "name": "使い魔の契約強化",
+            "description": "使い魔からの自動収益が50%増加",
+            "tier": 4,
+            "position": {
+                "x": 4,
+                "y": 3
+            },
+            "cost": 1800,
+            "prerequisites": [
+                "skill_015"
+            ],
+            "effects": {
+                "idle_income_multiplier": 1.5
+            }
+        }
+    ]
+}

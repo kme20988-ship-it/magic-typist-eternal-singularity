@@ -1,0 +1,252 @@
+{
+    "missions": [
+        {
+            "id": "daily_001",
+            "title": "初級魔法使いの試練",
+            "description": "10回の詠唱を成功させよ",
+            "requirement": {
+                "type": "spells_cast",
+                "count": 10
+            },
+            "reward": {
+                "mp": 100
+            }
+        },
+        {
+            "id": "daily_002",
+            "title": "コンボマスター",
+            "description": "15コンボを達成せよ",
+            "requirement": {
+                "type": "max_combo",
+                "count": 15
+            },
+            "reward": {
+                "mp": 150
+            }
+        },
+        {
+            "id": "daily_003",
+            "title": "魔力の収集家",
+            "description": "500MPを獲得せよ",
+            "requirement": {
+                "type": "mp_earned",
+                "count": 500
+            },
+            "reward": {
+                "mp": 200
+            }
+        },
+        {
+            "id": "daily_004",
+            "title": "火の使い手",
+            "description": "火属性の魔法を20回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "FIRE",
+                "count": 20
+            },
+            "reward": {
+                "mp": 120
+            }
+        },
+        {
+            "id": "daily_005",
+            "title": "水の賢者",
+            "description": "水属性の魔法を20回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "WATER",
+                "count": 20
+            },
+            "reward": {
+                "mp": 120
+            }
+        },
+        {
+            "id": "daily_006",
+            "title": "雷鳴の魔術師",
+            "description": "雷属性の魔法を20回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "THUNDER",
+                "count": 20
+            },
+            "reward": {
+                "mp": 120
+            }
+        },
+        {
+            "id": "daily_007",
+            "title": "風の詠唱者",
+            "description": "風属性の魔法を20回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "WIND",
+                "count": 20
+            },
+            "reward": {
+                "mp": 120
+            }
+        },
+        {
+            "id": "daily_008",
+            "title": "光の守護者",
+            "description": "光属性の魔法を15回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "LIGHT",
+                "count": 15
+            },
+            "reward": {
+                "mp": 150
+            }
+        },
+        {
+            "id": "daily_009",
+            "title": "闇の支配者",
+            "description": "闇属性の魔法を15回使用せよ",
+            "requirement": {
+                "type": "attribute_used",
+                "attribute": "DARK",
+                "count": 15
+            },
+            "reward": {
+                "mp": 150
+            }
+        },
+        {
+            "id": "daily_010",
+            "title": "完璧な詠唱",
+            "description": "95%以上の精度で30回詠唱せよ",
+            "requirement": {
+                "type": "accuracy",
+                "threshold": 95,
+                "count": 30
+            },
+            "reward": {
+                "mp": 250
+            }
+        },
+        {
+            "id": "daily_011",
+            "title": "フィーバーハンター",
+            "description": "フィーバーモードに3回突入せよ",
+            "requirement": {
+                "type": "fever_mode",
+                "count": 3
+            },
+            "reward": {
+                "mp": 300
+            }
+        },
+        {
+            "id": "daily_012",
+            "title": "モンスタースレイヤー",
+            "description": "モンスターを5体倒せ",
+            "requirement": {
+                "type": "monsters_defeated",
+                "count": 5
+            },
+            "reward": {
+                "mp": 180
+            }
+        },
+        {
+            "id": "daily_013",
+            "title": "使い魔の契約",
+            "description": "ショップでアップグレードを1つ購入せよ",
+            "requirement": {
+                "type": "upgrades_purchased",
+                "count": 1
+            },
+            "reward": {
+                "mp": 100
+            }
+        },
+        {
+            "id": "daily_014",
+            "title": "連続詠唱の達人",
+            "description": "ミスなしで50回詠唱せよ",
+            "requirement": {
+                "type": "perfect_streak",
+                "count": 50
+            },
+            "reward": {
+                "mp": 400
+            }
+        },
+        {
+            "id": "daily_015",
+            "title": "スピードキャスター",
+            "description": "30秒以内に10個の詠唱を完了せよ",
+            "requirement": {
+                "type": "speed_challenge",
+                "time": 30,
+                "count": 10
+            },
+            "reward": {
+                "mp": 200
+            }
+        },
+        {
+            "id": "daily_016",
+            "title": "魔力の蓄積",
+            "description": "累計2000MPを獲得せよ",
+            "requirement": {
+                "type": "total_mp_earned",
+                "count": 2000
+            },
+            "reward": {
+                "mp": 300
+            }
+        },
+        {
+            "id": "daily_017",
+            "title": "全属性マスター",
+            "description": "全6属性を各5回ずつ使用せよ",
+            "requirement": {
+                "type": "all_attributes",
+                "count": 5
+            },
+            "reward": {
+                "mp": 350
+            }
+        },
+        {
+            "id": "daily_018",
+            "title": "長時間の修行",
+            "description": "10分間プレイし続けよ",
+            "requirement": {
+                "type": "play_time",
+                "minutes": 10
+            },
+            "reward": {
+                "mp": 150
+            }
+        },
+        {
+            "id": "daily_019",
+            "title": "究極のコンボ",
+            "description": "50コンボを達成せよ",
+            "requirement": {
+                "type": "max_combo",
+                "count": 50
+            },
+            "reward": {
+                "mp": 500
+            }
+        },
+        {
+            "id": "daily_020",
+            "title": "伝説の魔法使い",
+            "description": "100回の詠唱を成功させよ",
+            "requirement": {
+                "type": "spells_cast",
+                "count": 100
+            },
+            "reward": {
+                "mp": 600
+            }
+        }
+    ]
+}

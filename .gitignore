@@ -25,4 +25,4 @@ dist-ssr
 
 # WASM
 wasm/target
-src/wasm_pkg
+# src/wasm_pkg (included for deployment platforms without Rust)

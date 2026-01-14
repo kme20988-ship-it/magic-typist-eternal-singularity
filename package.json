@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build:wasm && vite build",
-    "build:wasm": "PATH=\"$HOME/.cargo/bin:$PATH\" wasm-pack build wasm --target web --out-dir ../src/wasm_pkg",
+    "build:wasm": "PATH=\"$HOME/.cargo/bin:$PATH\" wasm-pack build wasm --target web --out-dir ../src/wasm_pkg || echo 'wasm-pack failed, using pre-built files from git'",
     "lint": "eslint .",
     "preview": "vite preview"
   },

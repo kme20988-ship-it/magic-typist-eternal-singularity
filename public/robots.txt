@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kme20988-ship-it.github.io/magic-typist-eternal-singularity/sitemap.xml

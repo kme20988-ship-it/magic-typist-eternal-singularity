@@ -37,6 +37,8 @@ jobs:
 
       - name: Build WASM and Web 🏗️
         run: npm run build
+        env:
+          DEPLOY_TARGET: gh-pages
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
